@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-sizing: border-box;
+}
+header #logo{
+    font: 60px "Oleo Script";
+    color: #f5f3a0;
+    text-transform:uppercase;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+header ul{
+    list-style: none;
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+header ul li a{
+    font: 24px Quicksand;
+    padding: 20px;
+    color: #fffb00;
+    text-decoration: none;
+}
+@media screen and (max-width:600px) {
+    header{
+        flex-direction: column;
+    }
+    header #logo{
+        font-size: 40px;
+    }
+    header ul{
+        padding-inline-start: 20px;
+    }
+    header ul li a{
+        padding: 10px;
+    }
+}
+main{
+    margin-top: 0;
+    height: 100vh;
+    width: 100%;
+    background:url("./images/ocean.jpg");
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero{
+    width: 1050px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+    margin-top: 150px;
+}  
+#hero h1{
+    font: 48px Raleway;
+    color:black;
+    text-transform: uppercase;
+}
+#hero p{
+    font: 36px Quicksand;
+    color: black;
+    margin: 24px 0 32px;
+    font-weight:normal;
+  }
+  #hero #discover{
+    font: 30px Quicksand;
+    text-decoration: none;
+    background-color: rgb(255, 251, 0);
+    padding: 12px 24px;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  }
+  @media screen and (max-width:840px) {
+    #hero{
+        margin-top: 180px;
+        padding-top: 10px;
+    }
+    header{
+        padding: 0px;
+        align-items: center;
+    }
+    header #logo{
+        font-size: 42px;
+    }
+    #hero h1{
+        font-size: 38px;
+    }
+  }
+  @media screen and (max-width:600px) {
+    
+      #hero h1{
+        font: 36px Raleway;
+        padding: 5px;
+      }
+      #hero p{
+        font: 24px Quicksand;
+        margin: 18px 0 28px;
+      }
+      #hero #discover{
+        font: 22px Quicksand;
+        padding: 12px 24px;
+        border-radius: 8px;
+        box-shadow: 2px 4px 8px rgb(68, 67, 67);
+      }
+  }
+  #highlights {
+    padding: 24px;
+    background: linear-gradient(0deg, rgb(227, 255, 253), rgb(202, 243, 240));
+  }
+  #highlights h2{
+    text-align: center;
+    margin: 24px 0px;
+    font: 50px Quicksand;
+    text-transform: uppercase;
+    color:rgb(59, 65, 64);;
+    font-weight: 900;
+  }
+  #destinations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    list-style: none;
+  }
+  @media screen and (max-width:1200px) {
+    #destinations{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width:800px) {
+    #destinations{
+        grid-template-columns: 1fr;
+    }
+    #highlights h2{
+        font-size: 36px;
+    }
+  }
+  #destinations li {
+    margin: 0 20px;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+  }
+  #destinations li img{
+    height: 250px;
+    width: 100%;
+    box-shadow: 2px 4px 8px rgb(118, 51, 51);
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  #destinations p{
+    margin: 20px 0px;
+    font: 26px Quicksand;
+    color: #7c7b7b;
+  }
+  strong{
+    color: rgb(0, 160, 117);
+  }
+  
+  footer {
+    background: linear-gradient(70deg, rgb(24, 24,24), rgb(25, 29, 29));
+    padding: 36px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer img{
+    height: 100px;
+    width: 100px;
+    padding:0px 50px;
+  }
+  
+  
+  /* Search bar container */
+  .search_bar {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Search input */
+  #search {
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Search button */
+  #search-btn {
+    background-color: rgb(255, 251, 0);
+    color: Black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #search-btn:hover {
+    background-color: rgba(235, 231, 11, 0.856);
+  }
+  
+  /* Search results container */
+  .search-result {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgb(240, 240, 240,0.01);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 265px;
+    overflow: auto;
+  }
+  
+  /* Individual contact card */
+  .contactCard {
+    background: linear-gradient(0deg, rgb(227, 255, 253), rgb(202, 243, 240));
+    /* border: 5px solid rgb(123,123,123);
+     */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgb(0,160,120,0.75);
+    width: 250px;
+    flex-grow: 1;
+    max-width: 90%;
+    text-align: left;
+
+}
+  
+  .contactCard div {
+    margin-bottom: 5px;
+  }
+  
+  .contactCard div {
+    font: 22px Quicksand;
+    color: #535252;
+  }
+  
+  /* No results message */
+  .search-result h3 {
+    color: #888;
+    text-align: center;
+    font-style: italic;
+    width: 100%;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 768px) {
+    .contactCard {
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .contactCard {
+      max-width: 100%;
+      padding: 0;
+    }
+    .search-result {
+        height: 210px;
+        padding: 0px;
+        margin: 10px auto;
+    }
+  }
+  .agency-list{
+    max-height: 300px;
+    overflow: auto;
+    align-items:center
+  }
